@@ -8,7 +8,8 @@
 
 <body>
     <header class="page-header">
-        <a class="page-header-logo" href="index.html"><img class="" src="" alt="Седона"></a>
+        <a class="page-header-logo" href="index.html"><img class="" src="images/logo.svg" width="139" height="70"
+                alt="Логотип-Седона"></a>
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
@@ -40,11 +41,13 @@
     </header>
     <main class="main-inner">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <img src="images/catalog-background-photo.jpg" width="1200" height="408" alt="Фон">
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                     <span class="visually-hidden">Главная</span>
-                    <img src="" alt="house">
+                    <img src="images/home-main.svg" width="12" height="12" alt="house">
+                    <img src="images/arrow.svg" width="6" height="8" alt="Стрелочка">
                 </a>
             </li>
             <li class="breadcrumbs-item">
@@ -104,18 +107,12 @@
                 <!--Добавляем выбор с диапозоном цен-->
                 <fieldset class="filters-group">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <label class="visually-hidden price-field" for="price-min">
-                        Минимальная цена
-                    </label>
-                    <input class="field-input" type="text" id="price-min" name="price-min" value="0">
-                    <label class="price-field" for="price-max">
-                        <span class="visually-hidden">Максимальная цена</span>
-                    </label>
-                    <input class="field-input" type="text" id="price-max" name="price-max" value="9000">
-                    <label class="price-field" for="price-range">
-                        <span class="visually-hidden">Выбрать диапазон цен</span>
-                    </label>
-                    <input class="range-input" type="range" id="price-range" min="0" max="15000" step="500"
+                    <label class="visually-hidden" for="min-price">от.</label>
+                    <input class="min-price" type="text" id="min-price" name="min-price" value="0" placeholder="от">
+                    <label class="visually-hidden" for="max-price">до.</label>
+                    <input class="max-price" type="text" id="max-price" name="max-price" value="9000" placeholder="до">
+                    <label class="checkpoint" for="range"></label>
+                    <input class="range" type="range" id="range" name="range" min="0" max="15000" step="1000"
                         value="9000">
                 </fieldset>
                 <!--Добавляем кнопки-->
@@ -153,7 +150,8 @@
             <ul class="catalog-card-list">
                 <li class="catalog-card-item">
                     <a class="catalog-card-link" href="#">
-                        <img class="catalog-card-image" src="" alt="Горный пейзаж с отелем">
+                        <img class="catalog-card-image" src="images/Catalog/Amara Resort & Spa.jpg" width="299"
+                            height="206" alt="Отель Amara Resort & Spa">
                     </a>
                     <h3 class="catalog-card-title">
                         <a class="catalog-card-link" href="#">Amara Resort & Spa</a>
@@ -170,7 +168,8 @@
                 </li>
                 <li class="catalog-card-item">
                     <a class="catalog-card-link" href="#">
-                        <img class="catalog-card-image" src="" alt="Отель на фоне гор">
+                        <img class="catalog-card-image" src="images/Catalog/Desert Quail Inn.jpg" width="299"
+                            height="206" alt="Отель на фоне гор">
                     </a>
                     <h3 class="catalog-card-title">
                         <a class="catalog-card-link" href="#">Desert Quail Inn</a>
@@ -187,7 +186,8 @@
                 </li>
                 <li class="catalog-card-item">
                     <a class="catalog-card-link" href="#">
-                        <img class="catalog-card-image" src="" alt="Горный пейзаж">
+                        <img class="catalog-card-image" src="images/Catalog/Villas at Poco Diablo.jpg" width="299"
+                            height="206" alt="Горный пейзаж">
                     </a>
                     <h3 class="catalog-card-title">
                         <a class="catalog-card-link" href="#">Villas at Poco Diablo</a>
@@ -204,7 +204,8 @@
                 </li>
                 <li class="catalog-card-item">
                     <a class="catalog-card-link" href="#">
-                        <img class="catalog-card-image" src="" alt="Пейзаж с дорогой">
+                        <img class="catalog-card-image" src="images/Catalog/GreenTree Inn.jpg" width="299" height="206"
+                            alt="Пейзаж с дорогой">
                     </a>
                     <h3 class="catalog-card-title">
                         <a class="catalog-card-link" href="#">GreenTree Inn</a>
@@ -291,7 +292,7 @@
         <section class="text">
             <h3 class="visually-hidden">Логотип .html academy</h3>
             <a class="page-footer-logo" href="#" target="_blank">
-                <img src="" alt="">
+                <img src="images/logo-footer.svg" width="115" height="33" alt="Логотип академии">
             </a>
         </section>
     </footer>
