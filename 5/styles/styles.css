@@ -156,7 +156,7 @@ body {
 .subscribe {
     color: #FFFFFF;
     background-color: #69796e;
-    background-image: url("../images//newsletters/email-background.jpg");
+    background-image: url("../images/email-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
