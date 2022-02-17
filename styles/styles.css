@@ -97,16 +97,22 @@ body {
 /* Преимущества */
 
 .advantages {
-      background-color: #FFFFFF ;
+      background-color: #FFFFFF;
   }
 
   .advantages-caption {
-    color:#333333;
+    color: #333333;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
 }
 
+.advantages-description {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
 .advantages-item {
     line-height: 21px;
     text-align: center;
