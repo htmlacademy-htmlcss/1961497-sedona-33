@@ -105,6 +105,11 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
+
+.advantages-description {
+    color:#000000;
+}
+
 .advantages-item-text-block {
     background-color: #83B3D3;
 }
