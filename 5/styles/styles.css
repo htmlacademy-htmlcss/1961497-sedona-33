@@ -100,17 +100,17 @@ body {
       background-color: #FFFFFF ;
   }
 
-.advantages-item {
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.advantages-description {
+  .advantages-description {
     color:#333333;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+}
+
+.advantages-item {
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .advantages-item-text-block {
