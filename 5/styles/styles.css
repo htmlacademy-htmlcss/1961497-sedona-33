@@ -146,6 +146,10 @@ body {
     text-align: center;
 }
 
+.advantages-item-text {
+    color: #333333;
+}
+
 .quest {
     font-weight: 400;
     font-size: 22px;
