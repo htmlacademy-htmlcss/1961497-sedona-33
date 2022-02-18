@@ -4,7 +4,7 @@
     font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
-  }
+}
 
 @font-face {
     font-family: "PT Sans";
@@ -12,8 +12,7 @@
     font-weight: 700;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
-  }
-  
+}
 
 body {
     font-family: "PT Sans", sans-serif;
@@ -22,9 +21,9 @@ body {
     line-height: 21px;
     color: #333333;
     background-color: #E5E5E5;
-  }
+}
 
-  .button {
+.button {
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -35,14 +34,14 @@ body {
     color: #FFFFFF;
 }
 
-  /* Шапка */
+/* Шапка */
 
 .page-header {
     color: #000000;
     background: #FFFFFF;
-  }
+}
 
- /* Навигация */
+/* Навигация */
 
 .navigation-link {
     font-family: "PT Sans", sans-serif;
@@ -52,23 +51,23 @@ body {
     color: #000000;
     background-color: #FFFFFF;
     text-decoration: none;
-  }
+}
 
-  .navigation-user-item-link {
+.navigation-user-item-link {
     background: #756257;
 }
 
 .navigation-user-link {
     text-decoration: none;
-  }
+}
 
- /* Основной контент */
+/* Основной контент */
 
- .main-index {
+.main-index {
     background-color: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
- }
+}
 
 .hero {
     background-color: #69796e;
@@ -83,7 +82,7 @@ body {
 }
 
 .promo {
-    font-size: 22px;  
+    font-size: 22px;
     line-height: 36px;
     text-align: center;
 }
@@ -93,14 +92,14 @@ body {
     font-size: 30px;
     text-transform: uppercase;
 }
- 
+
 /* Преимущества */
 
 .advantages {
-      background-color: #FFFFFF;
-  }
+    background-color: #FFFFFF;
+}
 
-  .advantages-caption {
+.advantages-caption {
     color: #333333;
     font-size: 18px;
     line-height: 21px;
@@ -113,6 +112,7 @@ body {
     line-height: 36px;
     text-align: center;
 }
+
 .advantages-item {
     line-height: 21px;
     text-align: center;
@@ -174,11 +174,13 @@ body {
     background: #83B3D3;
 }
 
-.subscribe {
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #69796e;
+.subscribe-has-background {
     background-image: url("../images/email-background.jpg");
+    text-align: center;
+}
+
+.subscribe {
+    color: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -188,6 +190,14 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.subscribe-button-newsletter {
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #83B3D3;
 }
 
 .social-link {
@@ -211,10 +221,15 @@ body {
 }
 
 .main-inner {
-    background: #FFFFFF;
-    background-image: url("../images/catalog-background-photo.jpg");
+    background-color: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.inner-header-container {
+    background-color: #FFFFFF;
+    background-image: url("../images/catalog-background-photo.jpg");
+    color: #FFFFFF;
 }
 
 .inner-header-title {
@@ -281,23 +296,6 @@ body {
     background: #83B3D3;
 }
 
-.subscribe-newsletter {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
-    color: #333333;
-    background-color: #FFFFFF;
-}
-
-.subscribe-button-newsletter {
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #83B3D3;
-}
-
 .catalog-pagination-link {
     font-weight: 700;
     font-size: 20px;
@@ -310,12 +308,6 @@ body {
 }
 
 .catalog-pagination-link-current {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
     color: #000000;
     background: #F2F2F2;
 }
