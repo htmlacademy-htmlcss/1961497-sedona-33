@@ -114,7 +114,6 @@ body {
 .advantages-item {
     line-height: 21px;
     text-align: center;
-    color: #000000;
 }
 
 .advantages-item-text {
@@ -187,6 +186,7 @@ body {
 
 .subscribe {
     background-color: #FFFFFF;
+    color:#000000;
 }
 
 .subscribe-title {
