@@ -111,6 +111,13 @@ body {
     text-align: center;
 }
 
+.advantages-description-text {
+    color: #333333;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .advantages-item {
     line-height: 21px;
     text-align: center;
@@ -148,6 +155,18 @@ body {
     text-align: center;
 }
 
+.advantages-backround {
+    background-color: #FFFFFF;
+}
+
+.advantages-sublist-item:nth-child(even) {
+    background: #FFFFFF;
+}
+
+.advantages-sublist-item:nth-child(odd) {
+    background: rgba(131, 179, 211, 0.12);
+}
+
 .quest {
     font-weight: 400;
     font-size: 22px;
@@ -176,17 +195,17 @@ body {
     background: #83B3D3;
 }
 
+.subscribe {
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 .subscribe-has-background {
     color: #FFFFFF;
     background-image: url("../images/email-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    text-align: center;
-}
-
-.subscribe {
-    background-color: #FFFFFF;
-    color:#000000;
 }
 
 .subscribe-title {
