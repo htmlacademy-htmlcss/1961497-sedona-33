@@ -201,26 +201,22 @@ body {
     color: #000000;
 }
 
-.subscribe-has-background {
-    color: #FFFFFF;
-    background-image: url("../images/email-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-.subscribe-title {
-    color: #000000;
-}
-
-.subscribe-subtitle {
-    color: #333333;
-}
-
 .subscribe-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #000000;
+}
+
+.subscribe-has-background {
+    background-image: url("../images/email-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.subscribe-has-background .subscribe-title {
+    color: #FFFFFF
 }
 
 .subscribe-button-newsletter {
