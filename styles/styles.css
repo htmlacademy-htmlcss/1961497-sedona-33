@@ -19,9 +19,6 @@ html {
 }
 
 body {
-    margin: 0;
-    margin-left: 40px;
-    margin-right: 40px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -31,6 +28,13 @@ body {
     line-height: 21px;
     color: #333333;
     background-color: #E5E5E5;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -95,45 +99,42 @@ body {
 /* Шапка */
 
 .page-header {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 70px;
     font-family: inherit;
     color: #000000;
     background: #FFFFFF;
 }
 
 .page-header-logo {
-    position: absolute;
+    margin-bottom: -5px;
     z-index: 1;
     width: 140px;
     height: 70px;
     margin-right: 30px;
-    padding-left: 70px;
-}
-
-.page-container {
-    width: 1200px;
-    margin: auto;
 }
 
 /* Навигация */
 
 .navigation {
     display: flex;
-    width: 1060px;
-    padding: 20px 70px 0;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+
 }
 
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
     list-style-type: none;
     margin: 0;
-    padding-left: 169px;
+    padding: 0;
 }
 
 .navigation-link {
-    display: flex;
-    padding: 20px 17px;
+    padding: 20px 0;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -150,19 +151,15 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    margin-right: 34px;
+    margin: 0 17px;
 }
 
 .navigation-user-item {
     margin-right: 0;
 }
 
-.navigation-user-item:nth-child(2) {
+.navigation-user-item:nth-child(3) {
     margin-right: 20px;
-}
-
-.navigation-item:last-child {
-    margin-right: 0px;
 }
 
 .navigation-user-item-link {
@@ -175,7 +172,6 @@ body {
 
 .navigation-user-link {
     display: flex;
-    padding: 20px 17px;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -187,27 +183,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 38px;
-    min-height: 38px;
+    min-width: 42px;
+    min-height: 66px;
 }
 
 .navigation-user-list {
     display: flex;
-    margin-left: auto;
-    width: 300px;
+    align-items: center;
     min-width: 18px;
-    min-height: 17px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Основной контент */
 
 .main-container {
     flex-grow: 1;
-    padding-top: 52px;
 }
 
 .main-index {
+    padding-top: 0;
     background-color: #FFFFFF;
 }
 
@@ -244,13 +240,13 @@ body {
 
 .advantages-list {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     margin: 0;
     padding: 0;
-    align-items: center;
     text-align: center;
     flex-wrap: wrap;
     list-style-type: none;
+    counter-reset: li;
 }
 
 .advantages-caption {
@@ -281,29 +277,36 @@ body {
 }
 
 .advantages-item-text {
+    width: 33.33%;
     color: #333333;
-    width: 400px;
     height: 384px;
+    box-sizing: border-box;
+}
+
+.advantages-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item h3::after {
+    content: "—№"counter(li)"—";
+    counter-increment: li;
+    display: block;
 }
 
 .advantages-item-text-block {
+    box-sizing: border-box;
+    padding: 20px;
     width: 400px;
     background-color: #83B3D3;
     color: #FFFFFF;
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
 }
 
 .advantages-item:nth-child(odd) {
     background: rgba(131, 179, 211, 0.12);
-    grid-row: 1 / 2;
-    grid-column: 2 / 4;
 }
 
 .advantages-item:nth-child(even) {
     background: rgba(131, 179, 211, 0.2);
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
 }
 
 .advantages-title {
@@ -328,7 +331,8 @@ body {
 
 .advantages-backround {
     background-color: #FFFFFF;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 0;
     list-style-type: none;
 }
@@ -349,7 +353,6 @@ body {
     color: #333333;
     background-color: #FFFFFF;
     width: 1200px;
-    height: 417px;
 }
 
 .quest-title {
@@ -375,8 +378,7 @@ body {
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
-    Width: 1200px;
-    Height: 411px;
+    width: 1200px;
 }
 
 .subscribe-title {
@@ -408,8 +410,6 @@ body {
 
 .page-footer-container {
     display: flex;
-    width: 1060px;
-    margin: 0 auto;
     justify-content: space-between;
     background-color: #FFFFFF;
     align-items: center;
@@ -465,7 +465,6 @@ body {
 
 .main-inner {
     background-color: #FFFFFF;
-
 }
 
 .inner-header-container {
