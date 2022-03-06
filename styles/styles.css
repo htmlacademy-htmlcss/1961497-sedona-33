@@ -464,6 +464,7 @@ body {
 /* Каталог */
 
 .catalog-products {
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -509,7 +510,7 @@ body {
 }
 
 .breadcrumbs-item {
-    position: relative;
+    margin-right: auto;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -531,7 +532,6 @@ body {
 }
 
 .catalog-filter-group {
-    display: flex;
     margin: 0;
     padding: 0;
     border: none;
@@ -549,6 +549,7 @@ body {
 }
 
 .catalog-result-text {
+    margin-right: auto;
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
@@ -575,8 +576,6 @@ body {
 
 .catalog-filter-list {
     color: #ffffff;
-    padding-left: 0px;
-    margin-top: 0px;
     list-style-type: none;
 }
 
@@ -586,15 +585,12 @@ body {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 44px;
-    padding-bottom: 56px;
     align-items: center;
 }
 
 .dropdown {
     width: 287px;
     height: 48px;
-    margin-top: -8px;
-    margin-right: 81px;
     font-family: inherit;
     font-size: 18px;
     line-height: 23px;
@@ -627,6 +623,10 @@ body {
 }
 
 .catalog-card-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 16px 26px;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
@@ -634,8 +634,7 @@ body {
 
 .button-select-control {
     display: flex;
-    padding-left: 81px;
-    height: 48px;
+    margin-left: 81px;
     flex-wrap: wrap;
 }
 
@@ -655,7 +654,7 @@ body {
     display: block;
     width: 17px;
     height: 16px;
-    padding: 17px 16px;
+    padding: 14px 13.5px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
     background-position: center;
@@ -711,14 +710,7 @@ body {
     margin-bottom: 64px;
     padding: 0;
     list-style-type: none;
-}
-
-.catalog-card-item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 206px auto repeat(3, min-content);
-    gap: 16px 26px;
-    padding: 20px;
+    border-bottom: thin dashed;
 }
 
 .catalog-card-link:not(.button) {
@@ -872,16 +864,6 @@ body {
     align-self: center;
 }
 
-.catalog-button::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: -218px;
-    background-color: #E6E6E6;
-    width: 1056px;
-    height: 1px;
-}
-
 .pagination-button {
     line-height: 26px;
     text-align: center;
@@ -895,11 +877,14 @@ body {
     background-color: #ffffff;
     padding-top: 30px;
     padding-bottom: 73px;
+    border-top: thin dashed;
 }
 
 .catalog-pagination {
     display: flex;
-    margin-left: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
     padding: 0;
     list-style-type: none;
 }
@@ -944,4 +929,14 @@ body {
     text-decoration: none;
     font-size: 20px;
     line-height: 26px;
+}
+
+.text-output {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 51px;
+}
+
+.subscribe-bottom {
+    padding-bottom: 141px;
 }
