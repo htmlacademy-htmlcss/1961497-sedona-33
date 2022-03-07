@@ -133,16 +133,28 @@
                             </fieldset>
                             <!--Добавляем выбор с диапозоном цен-->
                             <fieldset class="filters-group">
-                                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                                <label class="catalog-filter-input" for="min-price">от.</label>
-                                <input class="min-price" type="text" id="min-price" name="min-price" value="0"
-                                    placeholder="от">
-                                <label class="catalog-filter-input" for="max-price">до.</label>
-                                <input class="max-price" type="text" id="max-price" name="max-price" value="9000"
-                                    placeholder="до">
-                                <label class="checkpoint" for="range"></label>
-                                <input class="range" type="range" id="range" name="range" min="0" max="15000"
-                                    step="1000" value="9000">
+                                <span class="catalog-filter-title">Стоимость, ₽:</span>
+                                <div class="options-has-background">
+                                    <div class="range-wrapper-inputs">
+                                        <label class="catalog-filter-label" for="min-price">
+                                            <input class="catalog-filter-input" type="text" id="min-price"
+                                                name="min-price" value="0" placeholder="от">
+                                            <span>от</span>
+                                        </label>
+                                        <label class="catalog-filter-label" for="max-price">
+                                            <input class="catalog-filter-input" type="text" id="max-price"
+                                                name="max-price" value="9000" placeholder="до">
+                                            <span>до</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="range">
+                                    <div class="scale">
+                                        <div class="scale-line" style="width: 80%; margin-left: 0%"></div>
+                                    </div>
+                                    <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+                                    <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+                                </div>
                             </fieldset>
                             <!--Добавляем кнопки-->
                             <section class="filters-buttons">
@@ -169,16 +181,29 @@
                             <li class="catalog-displaytype-item">
                                 <a class="catalog-displaytype-link catalog-displaytype-current" href="#">
                                     <span class="visually-hidden">Таблица</span>
+                                    <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+                                            fill="#000" />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="catalog-displaytype-item">
                                 <a class="catalog-displaytype-link" href="#">
                                     <span class="visually-hidden">Колонка</span>
+                                    <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="catalog-displaytype-item">
                                 <a class="catalog-displaytype-link" href="#">
                                     <span class="visually-hidden">Список</span>
+                                    <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+                                            fill="#000" />
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
