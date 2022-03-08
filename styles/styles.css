@@ -50,14 +50,23 @@ body {
 }
 
 .button {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-align: center;
-    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 9px 32px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: inherit;
+    border: 0;
+    border-radius: 4px;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 3px #756257;
 }
 
 .button-booking-link {
@@ -476,7 +485,7 @@ body {
 .inner-header-container {
     background-size: 1200px 100%;
     min-height: 408px;
-    padding: 35px 72px 45px 71px;
+    padding: 39px 72px 45px 71px;
     background-image: url("../images/catalog-background-photo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -491,12 +500,14 @@ body {
     margin-bottom: 5px;
     font-weight: 700;
     font-size: 60px;
-    line-height: 78px;
+    line-height: 68px;
+    margin-bottom: 0;
 }
 
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin: 0;
     margin-bottom: 45px;
     padding: 0;
@@ -505,44 +516,58 @@ body {
 }
 
 .breadcrumbs-item {
-    margin: 0 10px 0 10px;
-
+    margin: 0 10px 0 0;
 }
 
 .breadcrumbs-link {
-    padding: 0;
-    margin-left: -5px;
+    display: block;
+    margin-bottom: 44px;
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
     text-decoration: none;
 }
 
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link::after {
+    content: "";
+}
+
+.breadcrumbs-link::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.35355 3.14645C3.15829 2.95118 2.84171 2.95118 2.64645 3.14645C2.45118 3.34171 2.45118 3.65829 2.64645 3.85355L4.79289 6L2.64645 8.14645C2.45118 8.34171 2.45118 8.65829 2.64645 8.85355C2.84171 9.04882 3.15829 9.04882 3.35355 8.85355L5.85355 6.35355C6.04882 6.15829 6.04882 5.84171 5.85355 5.64645L3.35355 3.14645ZM6.85352 3.14645C6.65826 2.95118 6.34168 2.95118 6.14642 3.14645C5.95115 3.34171 5.95115 3.65829 6.14642 3.85355L8.29286 6L6.14642 8.14645C5.95115 8.34171 5.95115 8.65829 6.14642 8.85355C6.34168 9.04882 6.65826 9.04882 6.85352 8.85355L9.35352 6.35355C9.54878 6.15829 9.54878 5.84171 9.35352 5.64645L6.85352 3.14645Z' fill='%232D3440'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .filter-container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     margin: 0;
 }
 
 .catalog-filter-group {
-    border: none;
+    border: 0;
+    margin: 0 62px 0 0;
+    padding: 0;
 }
 
 .filters-group {
     flex: none;
     box-sizing: border-box;
-    width: -401px;
-    margin-right: 81px;
-    margin-left: auto;
-    margin: 0;
+    width: 287px;
+    margin: 0 81px 0 auto;
     padding: 0;
     border: none;
 }
 
 /* добавление поля цены */
 .options-has-background {
-    padding: 34px;
     color: #fff;
     background-color: transparent;
 }
@@ -550,7 +575,8 @@ body {
 .range-wrapper-inputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 287px;
+    width: 100%;
+    margin: 34px 0 30px 0;
 }
 
 .catalog-filter-label {
@@ -640,11 +666,13 @@ body {
 
 .catalog-filter-item {
     margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 23px;
 }
 
 .catalog-result {
     display: flex;
-    padding: 50px 71px 56px 71px;
+    padding: 44px 71px 56px 71px;
     flex-direction: column;
 }
 
@@ -693,15 +721,24 @@ body {
 }
 
 .dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 40px 10px 15px;
     width: 287px;
-    height: 48px;
-    margin-left: 192px;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 23px;
-    border: 2px solid #E6E6E6;
+    font: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3' clip-path='url(%23clip0_24196_269)'%3E%3Cpath d='M6.6 6.7001L11.7 1.4001C12 1.1001 12 0.500098 11.7 0.200098C11.4 -0.0999023 10.8 -0.0999023 10.5 0.200098L6 4.9001L1.5 0.200098C1.2 -0.0999023 0.6 -0.0999023 0.3 0.200098C0.1 0.300098 0 0.600098 0 0.800098C0 1.0001 0.1 1.2001 0.3 1.4001L5.4 6.7001C5.7 7.1001 6.3 7.1001 6.6 6.7001Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_24196_269'%3E%3Crect width='12' height='7' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+    background-position: right 20px center;
+    border: 2px solid #e6e6e6;
     border-radius: 4px;
-    color: #333333;
+}
+
+.dropdown::-ms-expand {
+    display: none;
 }
 
 .dropdown:hover {
@@ -742,26 +779,28 @@ body {
 
 .catalog-displaytype {
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    list-style-type: none;
+    margin: 0 0 0 73px;
+    padding: 0;
+    list-style: none;
 }
 
 .catalog-displaytype-item {
-    margin-bottom: 8px;
+    margin: 4px 0 4px 8px;
 }
 
 .catalog-displaytype-link {
-    display: block;
-    width: 17px;
-    height: 16px;
-    padding: 8px 7px;
-    border: 2px solid #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #e6e6e6;
     border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 14px;
 }
 
 .catalog-card-image-link {
@@ -776,6 +815,7 @@ body {
     background-color: #FFFFFF;
     text-decoration: none;
     color: #000000;
+    white-space: nowrap;
 }
 
 .catalog-card-link img {
@@ -789,6 +829,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .catalog-card-text {
@@ -831,10 +872,6 @@ body {
     padding: 0;
     list-style-type: none;
     border-bottom: 1px solid #E6E6E6;
-}
-
-.catalog-card-link {
-    text-decoration: none;
 }
 
 .catalog-card-linkimage:hover {
@@ -889,27 +926,24 @@ body {
     border-radius: 4px;
 }
 
-.button-success {
-    display: inline-block;
-    width: 133px;
-    padding: 8px 5px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.29;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #7DB54F;
-    border-radius: 4px;
+.button-small:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
+.button-small:hover {
+    background-color: #615048;
 }
 
 .submit-button {
     background: #83B3D3;
     border-radius: 4px;
-    min-width: 160px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 14px 20px;
     margin-bottom: 20px;
     justify-items: center;
+    box-sizing: border-box;
 }
 
 .submit-button:focus {
@@ -969,7 +1003,24 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
-    background: #83b3d3;
+    background-color: #83b3d3;
+}
+
+.button-favorites:hover {
+    background-color: #68A2CA;
+}
+
+.button-success {
+    background-color: #7DB54F;
+}
+
+.button-success:hover {
+    background-color: #6C9E42;
+}
+
+.button-small:active,
+.button-favorites:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-card-text-rating {
@@ -1016,20 +1067,7 @@ body {
 }
 
 .dropdown-number-hotels {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url("../images/arrow.svg") center right 19px no-repeat;
     width: 160px;
-    height: 48px;
-    border: 2px solid #e6e6e6;
-    border-radius: 4px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    margin-left: 47px;
-    font-size: 18px;
-    line-height: 1.277;
-    padding-left: 15px;
-    padding-top: 10px;
 }
 
 .catalog-pagination {
@@ -1059,13 +1097,11 @@ body {
     text-decoration: none;
     font-size: 20px;
     line-height: 26px;
-    justify-content: start;
     text-align: center;
     text-decoration: none;
     margin: 0 8px;
     margin-right: auto;
     border-radius: 4px;
-
 }
 
 .catalog-pagination-link:focus-visible {
