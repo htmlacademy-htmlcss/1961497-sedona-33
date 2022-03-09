@@ -521,7 +521,6 @@ body {
 
 .breadcrumbs-link {
     display: block;
-    margin-bottom: 44px;
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
@@ -537,9 +536,9 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.35355 3.14645C3.15829 2.95118 2.84171 2.95118 2.64645 3.14645C2.45118 3.34171 2.45118 3.65829 2.64645 3.85355L4.79289 6L2.64645 8.14645C2.45118 8.34171 2.45118 8.65829 2.64645 8.85355C2.84171 9.04882 3.15829 9.04882 3.35355 8.85355L5.85355 6.35355C6.04882 6.15829 6.04882 5.84171 5.85355 5.64645L3.35355 3.14645ZM6.85352 3.14645C6.65826 2.95118 6.34168 2.95118 6.14642 3.14645C5.95115 3.34171 5.95115 3.65829 6.14642 3.85355L8.29286 6L6.14642 8.14645C5.95115 8.34171 5.95115 8.65829 6.14642 8.85355C6.34168 9.04882 6.65826 9.04882 6.85352 8.85355L9.35352 6.35355C9.54878 6.15829 9.54878 5.84171 9.35352 5.64645L6.85352 3.14645Z' fill='%232D3440'/%3E%3C/svg%3E%0A");
+    width: 5px;
+    height: 8px;
+    background-image: url("../images/arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -685,12 +684,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-top: 61px;
-    margin-right: 72px;
 }
 
 .catalog-result-text {
-    margin-right: auto;
     margin: 0;
+    margin-right: auto;
     padding: 0;
     font-weight: 700;
     font-size: 30px;
@@ -726,9 +724,9 @@ body {
     appearance: none;
     display: block;
     box-sizing: border-box;
-    padding: 10px 40px 10px 15px;
+    padding: 12px 40px 12px 15px;
     width: 287px;
-    font: inherit;
+    font-size: 18px;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3' clip-path='url(%23clip0_24196_269)'%3E%3Cpath d='M6.6 6.7001L11.7 1.4001C12 1.1001 12 0.500098 11.7 0.200098C11.4 -0.0999023 10.8 -0.0999023 10.5 0.200098L6 4.9001L1.5 0.200098C1.2 -0.0999023 0.6 -0.0999023 0.3 0.200098C0.1 0.300098 0 0.600098 0 0.800098C0 1.0001 0.1 1.2001 0.3 1.4001L5.4 6.7001C5.7 7.1001 6.3 7.1001 6.6 6.7001Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_24196_269'%3E%3Crect width='12' height='7' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-size: 12px auto;
@@ -769,12 +767,6 @@ body {
     padding: 20px;
     width: 100%;
     max-width: 340px;
-}
-
-.button-select-control {
-    display: flex;
-    margin-left: 81px;
-    flex-wrap: wrap;
 }
 
 .catalog-displaytype {
@@ -1060,6 +1052,7 @@ body {
 
 .catalog-bottom {
     display: flex;
+    align-items: center;
     background-color: #ffffff;
     padding-top: 30px;
     padding-bottom: 73px;
