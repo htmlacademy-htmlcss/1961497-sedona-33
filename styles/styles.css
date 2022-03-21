@@ -166,6 +166,9 @@ body {
     position: static;
 }
 
+.navigation-link-current {
+    text-decoration: none;
+}
 
 .navigation-link-current::before {
     content: "";
@@ -177,10 +180,6 @@ body {
     height: 2px;
 }
 
-.navigation-link-current {
-    text-decoration: none;
-}
-
 .navigation-item {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -189,7 +188,6 @@ body {
     font-size: 20px;
     line-height: 26px;
     margin: 0 17px;
-    position: relative;
 }
 
 .navigation-user-item {
@@ -398,7 +396,6 @@ body {
 }
 
 .container-text {
-    display: block;
     width: 33.33%;
     box-sizing: border-box;
     height: 385px;
@@ -411,7 +408,7 @@ body {
 
 .advantages-item:nth-child(odd) {
     background-color: rgba(131, 179, 211, 0.12);
-    height: 385px;
+    position: relative;
 }
 
 .advantages-name {
@@ -452,6 +449,7 @@ body {
     padding-left: 0;
     list-style-type: none;
     width: 33.33%;
+    position: relative;
 }
 
 .advantages-image {
