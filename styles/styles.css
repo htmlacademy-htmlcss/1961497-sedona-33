@@ -306,7 +306,7 @@ body {
 .promo {
     display: block;
     font-size: 22px;
-    line-height: 36px;
+    line-height: 35.8px;
     text-align: center;
     max-width: 1440px;
     margin: auto;
@@ -353,7 +353,6 @@ body {
     line-height: 21px;
     text-align: center;
     margin: 0;
-    padding: 20px;
     padding-bottom: 89px;
     padding-left: 75px;
     padding-right: 75px;
@@ -365,7 +364,7 @@ body {
     line-height: 21px;
     text-align: center;
     margin: 0;
-    padding: 30px;
+    padding: 32px 70px;
 }
 
 .advantages-item-text-block {
@@ -393,29 +392,35 @@ body {
 }
 
 .advantages-item-text {
+    display: block;
     color: #333333;
+    margin: auto;
 }
 
 .container-text {
+    display: block;
     width: 33.33%;
     box-sizing: border-box;
-    padding: 97px 75px 108px 75px;
+    height: 385px;
+}
+
+.container-text h3, p {
+    text-align: center;
+    margin: auto;
 }
 
 .advantages-item:nth-child(odd) {
     background-color: rgba(131, 179, 211, 0.12);
+    height: 385px;
 }
 
 .advantages-name {
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
     padding-top: 5px;
     text-transform: uppercase;
 }
 
-.advantages-item:nth-child(odd) {
-    background: rgba(131, 179, 211, 0.12);
-}
 
 .advantages-item:nth-child(even) {
     background: rgba(131, 179, 211, 0.2);
