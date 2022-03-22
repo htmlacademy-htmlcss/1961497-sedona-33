@@ -352,6 +352,7 @@ body {
     line-height: 21px;
     text-align: center;
     margin: 0;
+    padding-top: 1px;
     padding-bottom: 89px;
     padding-left: 75px;
     padding-right: 75px;
@@ -363,7 +364,7 @@ body {
     line-height: 21px;
     text-align: center;
     margin: 0;
-    padding: 32px 70px;
+    padding: 29px 70px;
 }
 
 .advantages-item-text-block {
@@ -372,7 +373,7 @@ body {
     width: 400px;
     background-color: #83B3D3;
     color: #FFFFFF;
-    padding-top: 97px;
+    padding-top: 94.7px;
 }
 
 .advantages-description-text {
@@ -394,7 +395,7 @@ body {
     display: block;
     color: #333333;
     margin: auto;
-    height: 178px;
+    height: 200px;
 }
 
 .container-text {
@@ -405,11 +406,12 @@ body {
 
 .container-text h3 {
     margin: auto;
-    width: 115px;
+    width: 200px;
 }
 
 .container-text p {
-    width: 200px;
+    width: 260px;
+    margin: 30px;
 }
 
 
@@ -419,9 +421,11 @@ body {
 }
 
 .advantages-name {
+    font-size: 24px;
+    line-height: 28px;
     margin: 0;
-    padding-bottom: 31px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 4px;
     text-transform: uppercase;
 }
 
@@ -434,14 +438,12 @@ body {
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.2;
+    line-height: 21px;
     margin: 0;
-    padding: 35px 75px 30px 75px;
 }
 
 .advantages-number span {
     width: 100%;
-    padding: 31px 0;
 }
 
 .advantages-title {
@@ -477,7 +479,7 @@ body {
     margin: 0;
     text-align: center;
     width: 400px;
-    padding-top: 79px;
+    padding-top: 84.5px;
 }
 
 .advantages-sublist-item:nth-child(even) {
@@ -495,7 +497,7 @@ body {
     text-align: center;
     color: #333333;
     background-color: #FFFFFF;
-    padding: 91px 240px 93px 240px;
+    padding: 84px 241px 88px 241px;
 }
 
 .quest-title {
@@ -508,7 +510,7 @@ body {
 }
 
 .quest-subtitle {
-    margin-top: 29px;
+    margin-top: 30px;
 }
 
 .quest-button {
@@ -517,7 +519,7 @@ body {
     width: 575px;
     color: #FFFFFF;
     background-color: #756257;
-    margin-top: 27px;
+    margin-top: 33px;
     border-radius: 10px;
 }
 
@@ -570,7 +572,6 @@ body {
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
-
     margin: 0;
 }
 
@@ -590,7 +591,7 @@ body {
     margin: 0;
     text-transform: uppercase;
     color: #000000;
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .subscribe-has-background {
@@ -607,12 +608,12 @@ body {
 .subscribe-background {
     margin: auto;
     display: block;
-    width: 589px;
+    width: 580px;
     padding: 90px;
 }
 
 .subscribe-button-newsletter {
-    min-width: 200px;
+    min-width: 220px;
     min-height: 60px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 20px;
@@ -645,7 +646,7 @@ body {
 .subscribe-form {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .field-email {
@@ -657,8 +658,7 @@ body {
     background: #f2f2f2;
     border-radius: 10px 0 0 10px;
     border: none;
-    padding-left: 22px;
-    padding-right: 19px;
+    padding-left: 2px;
 }
 
 .field:invalid {
@@ -682,8 +682,9 @@ body {
     justify-content: space-between;
     background-color: #FFFFFF;
     align-items: center;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 66px;
+    padding-right: 67px;
+    margin: 0;
 }
 
 .social-link {
@@ -819,6 +820,7 @@ body {
     padding: 0;
     list-style-type: none;
     margin-right: auto;
+    right: 8px;
 }
 
 .breadcrumbs li:first-of-type:before {
@@ -973,7 +975,7 @@ body {
 
 .scale {
     position: relative;
-    height: 2px;
+    height: 4px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -998,6 +1000,7 @@ body {
 }
 
 .catalog-filter-item {
+    display: block;
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 23px;
@@ -1006,7 +1009,7 @@ body {
 .form-control {
     position: relative;
     display: block;
-    padding-left: 36px;
+    padding-left: 38px;
 }
 
 .control-input {
@@ -1019,12 +1022,13 @@ body {
 .control-mark {
     position: absolute;
     display: block;
-    top: 2px;
+    top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: #FFFFFF;
     border-radius: 4px;
+    margin: auto;
 }
 
 .form-control:hover .control-mark {
@@ -1066,7 +1070,7 @@ body {
     top: 4px;
     left: 4px;
     width: 8px;
-    height: 8px;
+    height: 10px;
     background-color: #3F5E72;
     border-radius: 50%;
     content: "";
@@ -1076,7 +1080,7 @@ body {
 
 .catalog-result {
     display: flex;
-    padding: 44px 71px 56px 71px;
+    padding: 39px 58px 56px 70px;
     flex-direction: column;
 }
 
@@ -1117,7 +1121,7 @@ body {
 
 .catalog-wrapper {
     display: flex;
-    margin-bottom: 53px;
+    margin-bottom: 56px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -1181,13 +1185,14 @@ body {
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin: 0 0 0 73px;
+    margin: 0 0 0 71px;
     padding: 0;
     list-style: none;
 }
 
 .catalog-displaytype-item {
     margin: 4px 0 4px 8px;
+    padding: 0;
 }
 
 .catalog-displaytype-link {
@@ -1247,7 +1252,7 @@ body {
 .search-result-stars {
     color: #83B3D3;
     letter-spacing: 0.35em;
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .catalog-displaytype-link:not(.catalog-displaytype-current):hover {
@@ -1284,12 +1289,13 @@ body {
 .catalog-card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px 18px;
+    gap: 10px 10px;
     margin: 0;
-    margin-bottom: 34px;
+    margin-bottom: 64px;
     padding: 0;
     list-style-type: none;
     border-bottom: 1px solid #E6E6E6;
+    padding-left: 4px;
 }
 
 .catalog-card-linkimage:hover {
@@ -1314,7 +1320,8 @@ body {
 }
 
 .catalog-card-title {
-    margin: 0;
+    margin-top: 16px;
+    margin-right: 2px;
 }
 
 .card-link-title {
@@ -1322,11 +1329,12 @@ body {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+
 }
 
 .button-small {
     display: inline-block;
-    width: 133px;
+    min-width: 133px;
     padding: 8px 5px;
     font-weight: 700;
     font-size: 16px;
@@ -1337,6 +1345,7 @@ body {
     text-transform: uppercase;
     background: #756257;
     border-radius: 4px;
+
 }
 
 .button-small:focus {
@@ -1470,6 +1479,9 @@ body {
 }
 
 .pagination-button {
+    position: relative;
+    margin: 0 218px;
+    margin-bottom: 60px;
     line-height: 26px;
 }
 
@@ -1586,7 +1598,12 @@ body {
 }
 
 .subscribe-bottom {
-    padding-bottom: 141px;
+    display: block;
+    position: relative;
+    margin: 0;
+    min-height: 411px;
+    min-width: 1200px;
+    padding: 0;
 }
 
 /* Оформление модального окна */
